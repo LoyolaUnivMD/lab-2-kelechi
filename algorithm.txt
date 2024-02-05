@@ -1,3 +1,24 @@
-print out description of the program
-ask for the player's name
-...
+1. import DecimalFormat
+2. import Scanner
+3. import random;
+4. make the main class
+  a. Declare the scanner
+  b. call the random function
+  c. declare the decimalformat
+  d. Ask the user for their name
+  e. use the scanner to make the name a string
+  f. ask the user for how much they want to bet
+  g. use the scanner to make the bet a double
+  h. Print the name and how much they want to bet
+  i. Print out "Here are the tickets"
+  j. make a winningNums list of the winning numbers
+  k. initialize double prize as 0
+  l. initialize double winnings as 0
+  j. Make a for loop for the 10 tickets
+    i. Make a for loop for the 6 numbers
+    ii. Make the random number from numbers 0-99
+    iv. print the random number with a space, 6 in each line and 10 lines in all.
+    v. make a for loop of the length of the winning numbers and power how many times a winning number occurs by 1.75
+  k. Print the good luck message with the users name
+  l. Print the winnings
+  
