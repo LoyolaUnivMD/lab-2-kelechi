@@ -21,18 +21,18 @@ public class Main
     Random random = new Random();
     //Declare the decimalformat
     DecimalFormat decimal = new DecimalFormat("#00");
-
+    //ask for users name
     System.out.print("What is your name? ");
     String name = input.nextLine();
-
+    //ask user for how much they are betting
     System.out.print("How much do you want to bet? ");
     Double bet = input.nextDouble();
-
+    
     System.out.println("Great! " + name + " wants to play $" + bet + ".");
     
     //Output the tickets to the user
     System.out.println("Here are the tickets: ");
-
+    //make a list of the winning numbers
     int[] winningNums = {3, 5, 16, 58, 59, 11};
     double prize = 0;
     double winnings = 0;
@@ -47,6 +47,7 @@ public class Main
         if ((i+1) % 6 == 0){
           System.out.println();
         }
+        //make a for loop of the length of the winning numbers and power how many times a winning number occurs by 1.75
         for (int k = 0; k < winningNums.length; k++){
           if(randomNumber == winningNums[k]){
             winnings = Math.pow(bet,1.75);
@@ -56,7 +57,7 @@ public class Main
       }
       System.out.println();
     }
-
+    //print out the name and the users prize
     {
       System.out.println("-----------------");
       System.out.println("Good luck " + name + "!");
